@@ -35,7 +35,7 @@ Dockerfile / docker-compose.yml   Single-service deployment, SQLite persisted vi
 docker compose up --build
 ```
 
-Then open http://localhost:8000. Review state is persisted to `./data/qcm.db` (mounted
+Then open http://localhost:9443. Review state is persisted to `./data/qcm.db` (mounted
 as a volume), so it survives restarts and rebuilds.
 
 ## Deploying on your server
@@ -44,7 +44,7 @@ as a volume), so it survives restarts and rebuilds.
 docker compose up -d --build
 ```
 
-Point a reverse proxy at port 8000 (or change the host-side port in
+Point a reverse proxy at port 9443 (or change the host-side port in
 `docker-compose.yml`). There's no authentication — this is built for personal,
 single-user use, so keep it off the public internet or add basic auth / a VPN in front
 if it needs to be reachable beyond your LAN.

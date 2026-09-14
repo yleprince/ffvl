@@ -2,7 +2,7 @@ services:
   qcm:
     build: .
     ports:
-      - "8000:8000"
+      - "9443:9443"
     volumes:
       - ./data:/app/data
     environment:
