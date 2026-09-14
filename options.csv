@@ -1,0 +1,1259 @@
+questionId,text,score
+1,tempéré,-6
+1,froid,2
+1,occlus,2
+1,chaud,2
+2,descend plus vite,3
+2,vole moins vite,-6
+2,vole plus vite,3
+2,descend moins vite,-6
+3,En réduisant la prise de risque,2
+3,En améliorant la gestion de la peur,2
+3,En réduisant l'inconnu,2
+3,En éliminant toutes les erreurs humaines,-6
+4,permet d'exploiter la brise de pente loin du relief,-6
+4,renforce les brises de pente et de vallée,4
+4,rend la brise de pente irrégulière,2
+5,indique la vitesse à laquelle varie la pression,-6
+5,ne subit pas l'influence des variations de température,-6
+5,utilise une échelle d'altitude calibrée pour des valeurs météo moyennes (atmosphère standard),3
+5,même en parfait état est susceptible d'afficher pour une altitude donnée des valeurs qui peuvent varier selon l'heure et le lieu,3
+6,l'interdiction des activités humaines dans son périmètre,-6
+6,la protection d'un milieu naturel,2
+6,le développement d'une activité touristique respectueuse de l'environnement,2
+6,la sensibilisation à l'environnement,2
+7,peut entraîner un verrouillage irrémédiable,3
+7,peut être utilisé en école,-6
+7,est fortement déconseillé,3
+7,n'est jamais dangereux,-6
+8,ne varie jamais,-6
+8,est toujours inférieure à la finesse-air,-6
+8,est identique à la finesse-air dans une masse d'air immobile,6
+9,1500 m horizontalement et 300 m verticalement,6
+9,0 m,-6
+9,50 m horizontalement et 0 m verticalement,-6
+10,"je suis très méfiant, il pourrait arriver une masse d'air plus humide qui condense plus bas et me bouche la sortie, j'ai toujours une échappatoire latérale",3
+10,je suis sur un bord du nuage pour pouvoir m'échapper à tout moment,3
+10,"pas de soucis, j'ai une boussole ou un GPS",-6
+10,"j'en profite au maximum, c'est un nuage isolé, ça n'est pas grave si je passe un peu dedans",-6
+11,vous effectuez éventuellement une journée de stage en milieu aménagé,3
+11,vous multipliez les vols dans des aérologies standards pour vous la rendre familière,3
+11,vous recherchez la phase parachutale,-6
+11,"après un peu de gain, vous réalisez quelques « 360° » engagés afin de mesurer le taux de chute maximal",-6
+12,impose une prévol qui valide le système de verrouillage du container de la sellette,2
+12,n'exige pas l'étude d'un geste d'extraction particulier,-6
+12,expose le pilote à des risques d'ouverture intempestive,2
+12,"demande de réfléchir à la direction, la puissance et la rapidité du geste de lancer",2
+13,"m'évite d'avoir à faire une analyse trop compliquée, s'ils volent c'est que c'est bon pour moi",-6
+13,permet d'échanger sur nos expériences et de trouver des modes de pratiques plus sûrs,3
+13,"pour partager nos analyses, nos décisions, et faire mes choix avec plus d'éléments",3
+13,cela me permet de me mesurer à leurs performances,0
+14,vous freinez à gauche pour forcer la réouverture,-6
+14,vous chargez la demi-aile droite simultanément à la sellette et à la commande,2
+14,vous freinez du côté opposé pour stabiliser votre trajectoire en évitant le « surcontre »,2
+14,"de retour au vol droit, si l'aile est toujours fermée, vous pouvez forcer sa réouverture par une action ample et non maintenue du frein gauche",2
+15,20 km/h,-6
+15,18 km/h,-6
+15,36 km/h,6
+16,Zone Sans Montagne,-6
+16,Zone de Sensibilité Mineure,-6
+16,Zone Super Malsaine,-6
+16,Zone de Sensibilité Majeure,6
+17,les niveaux de températures,-6
+17,les niveaux des risques de précipitation,-6
+17,les anticyclones et les dépressions,6
+18,un couple piqueur,-6
+18,du roulis induit à droite,6
+18,du roulis induit à gauche,-6
+18,un couple cabreur,-6
+19,la traînée de forme,6
+19,la traînée induite,-6
+19,la traînée d'effet de sol,-6
+20,est nécessaire pour enseigner,-6
+20,garantit à l'élève le respect des exigences fédérales en matière d'apprentissage,6
+20,permet à un club d'enseigner sans moniteur,-6
+21,"ainsi, la voile ne fermera jamais",-6
+21,votre taux de chute est augmenté,3
+21,cela améliore votre pénétration,-6
+21,votre finesse est dégradée,3
+22,le vent sera nul ou très faible en vallée,-6
+22,"vous devez envisager l'éventualité d'un vent de vallée fort, surtout si la vallée est étroite",3
+22,"dans tous les cas, il est prudent de prévoir des possibilités tenant compte d'un éventuel vent de vallée fort",3
+23,"il n'y a pas de différence, c'est comme le vélo ça ne s'oublie pas",-6
+23,j'utilise des conditions faciles pour moi,3
+23,"j'aurai moins de résistance à la fatigue, je n'hésite pas à écourter mon vol pour garder un peu de fraîcheur pour l'atterrissage",3
+24,du renoncement,2
+24,des facteurs non techniques,2
+24,des facteurs techniques,2
+25,"son comportement en vol, la forme de ses ailes et de sa queue, son envergure",6
+25,la taille de son bec et de ses serres,-6
+25,sa couleur et son cri,-6
+26,a des qualités d'amortissement des turbulences intéressantes pour l'apprentissage,3
+26,"tolère, à l'écart du relief, des imprécisions de pilotage dans des conditions aérologiques modérées",3
+26,permet au pilote de voler en conditions fortes,-6
+27,est située au vent du relief,-6
+27,a la pente à sa gauche,-6
+27,a la pente à sa droite,6
+27,est située sous le vent du relief,-6
+28,le refroidissement du sol,-6
+28,l'arrivée d'air chaud en altitude,-6
+28,le réchauffement du sol,6
+29,inférieur au poids total aile + pilote,-6
+29,supérieur au poids total aile+pilote,6
+29,égal au poids total aile + pilote,-6
+30,cumulus,6
+30,"nimbostratus, altostratus et cumulonimbus",-6
+30,stratus,-6
+30,"cirrocumulus, nimbostratus et stratocumulus",-6
+31,à plus de 900 m au-dessus du niveau de la mer,-6
+31,à plus de 300 m au-dessus de tout relief,-6
+31,nulle part,6
+32,le signe d'une dégradation prochaine du temps,2
+32,caractéristique du beau temps qui va durer,-6
+32,le signe de la présence d'altocumulus,-6
+32,le signe de la présence de cirrostratus,4
+33,il ne peut pas y avoir d'ascendances thermiques,-6
+33,la température décroît doucement quand on s'élève en altitude,3
+33,la structure de la masse d'air s'oppose au développement des ascendances,3
+33,la température décroît rapidement quand on s'élève en altitude,-6
+34,vous en profitez pour gagner de l'altitude,-6
+34,vous dégagez du côté le plus clair pour échapper à l'influence du nuage,4
+34,vous augmentez la vitesse jusqu'à amener le variomètre à 0,-6
+34,"vous pouvez utiliser l'ascendance sur les bords du nuage, en gardant toujours une direction totalement dégagée à toute altitude",2
+35,plus élevée par vent arrière,6
+35,plus élevée par vent de face,-6
+35,ne change jamais,-6
+36,"même si les conditions sont moyennes, je trouverais bien un créneau pour voler",-3
+36,"j'ai posé une journée de congé, je vais sur site, ça devrait le faire",-3
+36,"conscient du biais cognitif des dépenses irrécupérables, je vais sur site avec un plan « B »",3
+36,"je prévois toujours un plan « B », je fais autre chose",3
+37,à la vitesse du taux de chute mini,-6
+37,à une vitesse supérieure à celle du taux de chute mini,-3
+37,à une vitesse inférieure à celle du taux de chute mini,6
+38,en vol face à son vent relatif,3
+38,en vol face au vent météo,-6
+38,au sol face au vent moyen,-6
+38,"au sol, à l'arrêt, face au vent instantané",3
+39,cela peut indiquer que je suis trop proche de sa zone de reproduction : je m'éloigne,2
+39,"c'est une forme de jeu, je peux m'approcher",-6
+39,il s'agit d'un vol dit « en festons »,2
+39,il s'agit d'un vol dit « en vagues »,-6
+39,cela peut indiquer qu'il est en parade nuptiale : je m'éloigne,2
+40,étudier à fond le sujet du parachute pour se permettre un engagement plus important sous son aile,-6
+40,"étudier toutes les probématiques autour de l'extraction, du lancer, de la descente sous parachute et du contact avec le sol",2
+40,pouvoir contrôler la possibilité d'un « effet miroir »,2
+40,avoir préalablement correctement réglé sa sellette en cas d'accroche aux épaules,2
+41,"La carte au 1/250 000, si le secteur où j'évolue est couvert",6
+41,La carte au 1/500 000 suffit amplement pour voler uniquement jusqu'au FL 115,-6
+41,"La carte au 1/1 000 000, car elle couvre tout l'espace aérien",-6
+42,peuvent se présenter sous forme de bulles ou de colonnes,2
+42,se déclenchent souvent sur des sols contrastés,2
+42,montent toujours verticalement,-6
+42,sont en général entourées de descendances,2
+43,sont mises en place pour protéger la zone de reproduction des rapaces,6
+43,sont mises en place pour protéger la tranquillité des riverains,-6
+44,peut envisager de faire l'essai d'une voile classée en « D »,-6
+44,choisit sa voile selon les conditions aérologiques,-6
+44,peut envisager de faire l'essai un prototype en air calme,-6
+44,ne devrait voler qu'avec des voiles classées en « A » ou « B »,6
+45,décroît plus lentement que si la particule contenait de l'air clair,6
+45,décroît plus vite que si la particule contenait de l'air clair,-6
+45,croît plus vite que si la particule contenait de l'air clair,-6
+46,vous ne pourrez plus piloter avec vos freins,3
+46,c'est fortement déconseillé,-6
+46,votre aile sera moins sensible en tangage,3
+47,sont acquis par le pilote à un moment donné et ne peuvent évoluer,-6
+47,évoluent tout au long de la formation du pilote,4
+47,s'acquièrent par approfondissements pratiques et théoriques,2
+48,augmenter l'incidence,3
+48,diminuer l'incidence,-6
+48,brider l'aile ou la demi-aile concernée,3
+48,débrider l'aile ou la demi-aile concernée,-6
+49,concave,-6
+49,tel que vous pourrez vous éloigner assez vite du relief,2
+49,convexe,2
+49,tel que vous pourrez facilement vous arrêter en cas de problèmes au gonflage,2
+50,peut être modifié par le réglage de la longueur des freins,-6
+50,est déterminé par la longueur de chaque suspente,2
+50,peut être fortement modifié par le vieillissement du suspentage,2
+50,est modifié par une action sur les trims ou l'accélérateur,2
+51,décolle à une plus grande vitesse,-6
+51,a un taux de chute moins important,3
+51,a une finesse plus élevée,-3
+51,est moins manœuvrable,3
+52,vous impose un atterrissage immédiat,3
+52,peut rendre de toute façon l'atterrissage problématique,3
+52,vous invite à profiter des ascendances larges avant la pluie,-6
+53,Consommer des stimulants,-6
+53,Prendre des pauses régulières,6
+53,Ignorer la fatigue,-6
+53,Voler plus rapidement,-6
+54,traînée de forme ou de pression,2
+54,traînée de frottement ou de profil,2
+54,traînée induite,2
+55,une zone cœur à statut de protection fort,2
+55,une seule zone avec le même statut sur toute la surface du parc,-6
+55,une aire d'adhésion,2
+55,une ou des réserves intégrales,2
+56,Il est uniquement possible de pénétrer en week-end et jours fériés : interdit en semaine,-6
+56,Il suffit de téléphoner au numéro mentionné pour savoir si l'on peut la traverser,-6
+56,Il est interdit de pénétrer le volume des ZIT mentionnées sur les cartes aéronautiques,6
+57,est dangereux pour nos ailes,-6
+57,ne se forme que dans une couche d'air à tendance stable,-6
+57,n'est pas coiffé par un cumulus,6
+57,permet un gain minimum de 1000 m,-6
+58,vous volez le plus vite possible,-6
+58,"vous prenez de la marge/relief, volez plus lentement et augmentez votre niveau de présence au pilotage",4
+58,vous évitez de descendre en dessous des crêtes,2
+59,des turbulences dangereuses,3
+59,un assèchement de la masse d'air sous le vent des reliefs,3
+59,des nuages dérivant avec le vent,-6
+60,nécessite une autorisation d'utilisation,-6
+60,est obligatoire en sortie club,-6
+60,est vivement conseillé quelle que soit la forme de pratique et demande une formation pour son utilisation,3
+60,est obligatoire en compétition FFVL,3
+61,La concentration sur la technique,-6
+61,L'optimisme excessif,6
+61,Le pessimisme,0
+61,L'analyse météorologique rigoureuse,-6
+62,elle sera plus maniable,-6
+62,le taux de chute sera légèrement plus favorable,2
+62,elle sera plus sensible à la fermeture dans les turbulences,2
+62,les actions aux commandes seront moins efficaces,2
+63,"le Ns donne des averses violentes, le Cb de la pluie continue",-6
+63,le Ns est accompagné d'un orage et le Cb d'un halo,-6
+63,"le Ns donne de la pluie continue et le Cb des pluies orageuses, des éclairs et des vents forts tourbillonnants",6
+64,j'observe l'assombrissement du ciel et attends des signes de renforcement du vent pour décider d'aller me poser,-6
+64,je vais me poser sans attendre si le ciel se couvre rapidement,2
+64,je vole en ayant conscience de la fulgurance des phénomènes orageux,2
+64,je réagis rapidement et vais me poser si les ascendances commencent à s'élargir,2
+65,dure maximum 3 mois,-6
+65,peut durer plus de 6 mois,2
+65,varie selon les espèces,2
+65,se situe plutôt autour du printemps,2
+65,se situe plutôt à la fin de l'été,-6
+66,la traînée de frottement,2
+66,la traînée de forme,2
+66,la traînée induite,2
+67,vous devez voler le plus lentement possible pour ne pas fatiguer la structure,-6
+67,les efforts sur la structure augmentent avec la vitesse de vol,6
+67,vous prenez le plus de vitesse possible pour rapidement sortir de la zone,-6
+68,une couche d'air chaud qui est au-dessus d'une couche d'air froid,6
+68,une couche d'air qui bloque le développement des ascendances,0
+68,une couche d'air froid qui est au-dessus d'une couche d'air chaud,-6
+69,le responsable régional de la formation (RRF),6
+69,le directeur technique de l'école (DTE),-6
+69,le président du club où vous êtes affilié,-6
+70,savoir le reconditionner dans sa sellette,2
+70,se préparer en permanence à son utilisation,2
+70,savoir le replier,-6
+70,"envisager de l'aérer, le replier et le reconditionner au moins 1 fois par an",2
+71,obtenue à une vitesse supérieure à celle du taux de chute mini,6
+71,obtenue à une incidence dépendant du vent météo,-6
+71,une valeur qui dépend de la charge alaire,-6
+72,plus vite,3
+72,plus longtemps,3
+72,moins longtemps,-6
+72,moins vite,-6
+73,traînée de forme ou de pression,2
+73,traînée de sillage,-6
+73,traînée de frottement ou de profil,2
+73,traînée induite,2
+74,d'air froid s'étendant à l'arrière du front froid,6
+74,d'air chaud compris entre le front chaud et le front froid,-6
+74,nuageuse très développée arrivant avec le front froid,-6
+75,par couches minces stratiformes,-6
+75,isolés de type cumuliformes,-6
+75,développés sur une grande épaisseur et des 2 types,6
+76,adaptant une respiration en cohérence cardiaque,3
+76,verbalisant la suite du pilotage à haute voix,2
+76,m'hydratant légèrement,1
+76,lâchant les commandes afin de détendre les bras/épaules,-6
+77,1000 m,-6
+77,50 m,-6
+77,300 m,6
+77,100 m,-6
+78,"Le nom, le type, les horaires, le volume et le numéro de téléphone liés à cet espace",-6
+78,"Le type, le nom, le plancher et le plafond, ainsi que la fréquence d'appel pour cet espace",6
+78,Le nom et le type d'espace ainsi que les hauteurs sol du volume correspondant,-6
+79,certifie que tout parapente homologué est utilisable sans risque par n'importe quel pilote (y compris les débutants),-6
+79,oblige le constructeur à conserver les caractéristiques techniques sur tous les exemplaires produits,3
+79,est valable quel que soit le harnais monté sur l'aile,-6
+79,permet de se faire une idée du comportement de ce modèle,3
+80,je vérifie où aboutissent sur mon aile la sélection des suspentes que je dois tirer,3
+80,je regarde ma voile pour vérifier le bon déroulement de l'opération,3
+80,je n'oublie pas de préalablement me séparer des freins,-6
+81,est indépendante de la forme de l'aile,-6
+81,est indépendante de la vitesse-air,-6
+81,se divise en traînée de forme + traînée induite + traînée de frottement,6
+82,je décolle dans l'idée de faire un triangle > 100 km,-6
+82,je décolle pour un cross mais suis très attentif à mon état de fatigue,0
+82,je propose aux copains de leur faire la navette,3
+82,je me contente d'un vol découverte du site,3
+83,demande un dosage ajusté pour que le pilote garde son équilibre au moment du contact/sol,3
+83,demande de freiner amplement pour obtenir rapidement le décrochage de l'aile,-6
+83,peut s'enchainer avec un relevage des commandes et en reculant vers l'aile,3
+83,s'enchaine en résistant autant que possible pour affaler l'aile aux freins,-6
+84,ne donne pas d'informations utiles pour le vol libre,-6
+84,indique la présence d'ascendances thermiques,-6
+84,présage de conditions peu favorables à la prise d'altitude en vol libre,6
+85,Le FL 115 soit environ 3500 m,3
+85,"Le FL 195, dans certaines LTA E Alpes ou Pyrénées",3
+85,Le FL 100 ou 1000 ft surface en haute montagne,-6
+86,il vous doit la priorité,-6
+86,"en approche, il n'y a plus de priorité",-6
+86,vous l'observez attentivement car vous lui devez la priorité,6
+86,vous faites des 360° pour vous poser avant lui,-6
+87,indirectement par l'intermédiaire du sol,6
+87,directement par convection,-6
+87,directement par rayonnement,-6
+88,le réchauffement de l'air ascendant,-6
+88,le refroidissement de l'air jusqu'à son niveau de condensation,6
+88,une forte descendance,-6
+89,faire les oreilles,-6
+89,suspentes fines ou montants de trapèze profilés,2
+89,harnais profilé,2
+89,profil optimisé par un bel état de surface,2
+90,nécessite de vérifier le bon verrouillage de son container/sellette lors de la visite prévol,2
+90,"son aération, son repliage et son reconditionnement sont à faire au moins une fois tous les 2 ans",-6
+90,nécessite de vérifier la bonne position de la poignée d'extraction lors de la visite prévol,2
+90,est un sujet qui exige une étude et une préparation pour en optimiser son fonctionnement,2
+91,décoller sans être en possession d'une assurance spécifique vol libre,2
+91,rester en vol au-delà de 30 min après le coucher du soleil,2
+91,décoller 30 min après le coucher du soleil,2
+92,tirer sur le frein droit,-6
+92,relever le frein gauche,3
+92,appliquer mon poids sur les élévateurs de droite,3
+93,Renforcement des bonnes pratiques de sécurité,2
+93,Augmentation de l'anxiété du pilote,-6
+93,Identification des erreurs et des améliorations potentielles,2
+93,Partage des expériences avec d'autres pilotes,2
+94,ne varie pratiquement pas,-6
+94,augmente progressivement jusqu'au décrochage,-6
+94,"augmente, passe par un maximum, diminue puis s'effondre brusquement (décrochage)",6
+95,la surface de l'intrados posé à plat,3
+95,la projection de la voile gonflée sur un plan,3
+95,l'envergure multiplié par l'épaisseur du profil,-6
+96,descend par rapport à l'air ascendant,6
+96,monte par rapport à l'air ascendant,-6
+96,monte à la même vitesse que l'air ascendant,-6
+97,reste constante,-6
+97,augmente de 1° par 100 m,-6
+97,diminue de 1° par 100 m,6
+98,température,-6
+98,pression,6
+98,humidité,-6
+99,ont pour objectif de protéger la faune et/ou la flore d'un site,3
+99,peuvent concerner le vol libre,3
+99,ne concernent jamais le vol libre,-6
+100,s'accroît avec l'augmentation de la vitesse,2
+100,augmente lorsque je tire sur les freins,2
+100,dépend de la vitesse relative de chacune de mes demi-ailes,2
+100,faiblit avec l'augmentation de la vitesse,-6
+101,dans une confluence,2
+101,en traversant une couche d'inversion,2
+101,en entrée et sortie de thermique,2
+102,pour guider les pilotes qu'il accompagne tout le long du vol,-6
+102,uniquement pour les guider au décollage,-3
+102,uniquement pour les guider à l'atterrissage,-3
+102,"comme n'importe quel pilote, sans plus",6
+103,il est recommandé d'avoir l'accélérateur au pied en cas de phase parachutale,3
+103,je n'ai plus d'autre choix que de piloter les grandes lignes de ma trajectoire à la sellette,3
+103,mon nouveau taux de chute me permet de facilement redescendre dans toutes les situations aérologiques,-6
+104,"je force le passage, ça m'étonnerait que ça ne passe pas",-6
+104,je choisis un terrain de secours adapté déjà reconnu en stage,6
+104,je vois une toute petite clairière accidentée plus loin pour aller me poser,-6
+104,je fais demi-tour pour essayer de me reposer quoi qu'il arrive au décollage,-6
+105,portance sur traînée,3
+105,traînée sur portance,-6
+105,vitesse-air horizontale sur vitesse-air verticale,3
+105,distance parcourue horizontalement sur distance parcourue verticalement,-6
+106,s'exprime en degrés,-6
+106,s'exprime en pourcentage,2
+106,est équilibré lorsque le centre de poussée et le centre de gravité sont alignés verticalement sur corde,4
+107,en débridant totalement l'aile quitte à produire une abattée et augmenter le taux de chute,6
+107,faisant les oreilles pour fuir au plus vite le secteur,-6
+107,tirant sur les freins pour réduire le taux de chute qui est en passe d'augmenter,-6
+108,se développent verticalement,-6
+108,caractérisent des couches plutôt stables,3
+108,caractérisent des couches plutôt instables,-6
+108,se développent horizontalement,3
+109,"n'est pas en soi puni par la loi, mais peut constituer une infraction dans le cas du dérangement d'une espèce protégée",6
+109,n'est jamais puni par la loi,-6
+110,donne une indication variant avec les données atmosphériques,2
+110,est calé définitivement à la construction,-6
+110,"doit toujours être comparé et réglé par rapport aux valeurs connues (décollage, points reconnus, atterrissage)",2
+110,"peut être calé à différentes valeurs (niveau de la mer, du décollage, de l'atterrissage, etc.)",2
+111,classe les parapentes en 4 niveaux d'accès dont le plus accessible est noté D,-6
+111,sépare les parapentes en 4 niveaux de comportements en vol,2
+111,"applique des tests de résistance à 8G, au sol, derrière un véhicule",2
+111,"attribue les lettres A, B, C ou D à 28 manœuvres réalisées en vol par des pilotes test",2
+112,La diminution de la prise de décision,3
+112,L'augmentation de la réactivité,-3
+112,La réduction de la vigilance,3
+112,L'amélioration de la concentration,-3
+113,je peux toujours décoller,-6
+113,je peux parfois décoller à certains endroits dans le cadre de dérogations,6
+113,je ne peux jamais décoller,-6
+114,est soulevé,6
+114,soulève l'air froid,-6
+114,peut être refoulé vers le bas ou soulevé selon la situation,-6
+115,vous faites des 360° devant la pente,-6
+115,vous faites des 8 longs en tournant face à la pente,-6
+115,vous faites des 8 longs en tournant face au vent,6
+115,vous volez à la vitesse minimum de l'aile,-6
+116,d'incidence,2
+116,de masse,-6
+116,de Force Aérodynamique,2
+116,de vitesse-air,2
+117,Des NOTAM d'information pour renforcer la vigilance des pilotes,-6
+117,Les aéronefs non motorisés doivent simplement ne pas survoler les lieux de déroulement,-6
+117,Des restrictions d'horaires et de volumes de vol matérialisés par des ZRT et/ou des ZIT,6
+118,tangage,-6
+118,lacet,6
+118,roulis,-6
+119,nimbostratus,3
+119,cumulonimbus,3
+119,cumulus,-6
+120,ne jamais faire d'évolutions serrées,3
+120,s'éloigner des limites du domaine de vol,3
+120,voler au taux de chute mini,-6
+121,avoir assimilé les performances en plané de son aile et les notions de finesse/air et finesse/sol,3
+121,pouvoir le rejoindre à tout moment quelles que soient les conditions aérologiques rencontrées,3
+121,c'est pouvoir garantir d'y revenir après m'en être éloigné à une distance de 20 de finesse,-6
+122,au sommet d'une crête entre 2 vallées alimentées chacune par une brise,2
+122,le long d'un front de brise de mer,2
+122,entre une brise et un vent météo,2
+123,L'excitation du moment,2
+123,La confiance en soi,2
+123,L'état de fatigue,2
+124,de perdre de l'altitude en accélérant,0
+124,d'augmenter le trajet à parcourir en déviant votre trajectoire,3
+124,de perdre de l'altitude en parachutant légèrement,-6
+124,d'augmenter la traînée en vous relevant,3
+125,une visibilité de 3000 m et maintenir un espacement par rapport aux nuages de 600 m,-6
+125,une visibilité d'au moins 1500 m et voler hors des nuages,6
+125,une visibilité d'au moins 8 km et un espacement par rapport aux nuages de 300 m verticalement et 1500 m horizontalement,-6
+126,peuvent auto brider le bord de fuite lors de l'utilisation de l'accélérateur,2
+126,peuvent empêcher la montée de la voile,2
+126,créent un risque supplémentaire de phase parachutale,2
+126,n'ont rien à voir avec les cascades d'incidents,-6
+127,plutôt sélectivement instable,-6
+127,plutôt instable,-6
+127,plutôt stable,6
+128,l'incidence augmente,2
+128,traverser un gradient ou une turbulence peut accroître considérablement votre taux de chute,2
+128,il n'existe aucun risque de parachutage,-6
+128,votre finesse diminue,2
+129,implique généralement des hauteurs minimums de survol du coeur du parc et des réserves,3
+129,est interdite,-6
+129,fait l'objet de réglementations et de recommandations qui varient d'un parc à l'autre,3
+130,est d'environ 45 km/h,6
+130,est d'environ 25 km/h,-6
+130,reste inchangée,-6
+131,voler trop lentement en freinant votre aile,3
+131,vous rapprocher dangereusement de la vitesse minimum et des risques associés,3
+131,voler trop rapidement en accélérant votre aile,-6
+132,vous êtes prioritaire sur une aile située en dessous et qui vous rejoint,-6
+132,aucune autre aile n'a le droit d'utiliser cette ascendance,-6
+132,une aile qui entre dans l'ascendance au même niveau que vous doit spiraler à 180° et dans le même sens,3
+132,les ailes qui arrivent après vous doivent adopter votre sens de rotation,3
+133,une force de résistance à la pénétration dans l'air,3
+133,proportionnelle au cube de la vitesse-air,-6
+133,proportionnelle au carré de la vitesse-air,3
+133,indépendante de la vitesse-air,-6
+134,"L'environnement, les communautés",2
+134,La gestion du vol,2
+134,La prise de décisions,2
+134,Le SIV,-6
+135,les stratus ont tendance à se développer,-6
+135,les cumulus ont tendance à se développer,3
+135,la température décroît rapidement quand on s'élève en altitude,3
+135,il y a peu d'ascendances,-6
+136,est dégradée,6
+136,est améliorée,-6
+136,reste la même,-6
+137,inférieure ou égale à la finesse max. de l'aile,-6
+137,n'a pas à être comparée à la pente de finesse max. de l'aile,-6
+137,supérieure à la pente de finesse max de l'aile,6
+138,mesure la vitesse ascensionnelle de la masse d'air dans un thermique,-6
+138,utilise ses capacités d'analyse des variations instantanées de pression statique,3
+138,peut mesurer la vitesse du vent s'il est utilisé au sol,-6
+138,extrapole et traduit des variations de pression en « mètre par seconde » (m/s),3
+139,l'air est très humide et le système nuageux important,3
+139,les pluies sont continues,3
+139,les pluies sont intermittentes et violentes,-6
+140,uniquement pendant la période d'accouplement,-6
+140,s'ils sont susceptibles,-6
+140,durant toute la période de reproduction,6
+141,sur la vitesse-sol,-6
+141,sur la finesse-sol,-6
+141,sur la vitesse-air,6
+142,le gradient vertical de pression atmosphérique,0
+142,la variation du taux d'humidité,-6
+142,l'altitude,6
+143,"avant le vol, c'est un minimum",6
+143,au moment d'atterrir,-6
+143,"en vol, en venant à la verticale pour l'observer",-6
+144,est visible sous forme de buée blanche,-6
+144,est présente au sol certains matins sous forme de rosée,-6
+144,est invisible,6
+145,permet de bénéficier d'allègements de formation du diplôme d'Etat (DEJEPS),-6
+145,est un produit fédéral visant à concurrencer les écoles professionnelles,-6
+145,s'adresse à des bénévoles et n'attribue aucune prérogative pour l'enseignement du vol libre,3
+145,est un produit fédéral permettant aux clubs de mieux accueillir et aider les nouveaux pilotes,3
+146,un nuage orographique sur le relief au vent,2
+146,un refroidissement de la masse d'air sous le vent du relief,-6
+146,"une descente d'air chaud, sec et très turbulent sous le vent du relief",4
+147,vous restez attentifs aux informations que vous procurent vos commandes,2
+147,vous pilotez de manière à amortir en priorité les mouvements pendulaires de l'aile,2
+147,vous restez bras hauts,-6
+147,vous les contrez pour conserver votre cap et veillez à conserver de la vitesse,2
+148,d'une commande intérieure dure et largement abaissée,2
+148,d'un affaiblissement du bruit du vent relatif dans les oreilles du pilote,2
+148,du sentiment que l'aile a du mal à tourner,2
+148,d'une augmentation du bruit du vent relatif dans les oreilles du pilote,-6
+149,"en vol, régulièrement m'exercer à trouver le contact de sa poignée",2
+149,avoir étudié le mode d'affalement du parapente afin d'optimiser les performances du parachute,2
+149,faire un lavage par an en machine avant de le replier,-6
+149,l'aérer une fois par an au minimum avant de le replier,2
+150,en finale je relève le regard pour accepter plus facilement la prise de vitesse,2
+150,"pour rester concentré sur le point d'aboutissement, je fixe ce point le plus possible",-6
+150,"pour ne pas me faire surprendre, je visualise les obstacles et je verbalise leur présence",2
+150,"pour avoir une bonne vision en 3D je déplace mon regard régulièrement, en haut, en bas, sur les côtés, sur le terrain...",2
+151,droite dans l'hémisphère nord,6
+151,droite dans l'hémisphère sud,-6
+151,gauche dans l'hémisphère nord,-6
+152,vous équipez votre sellette d'un kit de secours comprenant au minimum une ficelle résistante de 20 m,2
+152,vous faites vérifier votre aile par un atelier dès que vous constatez une paresse inhabituelle au gonflage,2
+152,vous faites vérifier votre aile par un atelier dès que vous constatez un comportement inhabituel en virage,2
+153,l'arrivée prochaine d'une ressource lorsqu'il se sent « tomber vers l'avant »,2
+153,l'imminence d'une fermeture du côté où sa commande durcit,-6
+153,l'arrivée d'un mouvement de piqué lorsque sa vitesse diminue,2
+153,l'arrivée prochaine d'une abattée lorsqu'il se sent « tomber sur le dos »,2
+154,cumulonimbus,3
+154,strato-cumulus,-6
+154,nuages de rotors,3
+155,Quand j'ai un doute je préfère renoncer,3
+155,Se fier aux pilotes que j'observe en l'air,0
+155,Se mettre en l'air pour tâter la masse d'air,-6
+155,Demander l'avis d'un moniteur ou d'une personne de confiance,3
+156,ne pas taquiner les vitesses trop basses,2
+156,ne pas taquiner les vitesses trop élevées,2
+156,ne jamais faire d'évolutions serrées,2
+157,le niveau que le pilote veut atteindre,-6
+157,la catégorie de la voile,2
+157,l'avis d'un vendeur spécialisé qui connaît le pilote,3
+157,le niveau d'accessibilité défini par la presse spécialisée,1
+158,est une entreprise privée financièrement indépendante de la FFVL,2
+158,signe annuellement une charte garantissant notamment le respect des règles d'enseignement édictées par la FFVL,2
+158,est une entreprise privée qui fait l'objet d'un suivi régulier de la part de la FFVL,2
+159,roulis,6
+159,lacet,-6
+159,tangage,-6
+160,poids total (aile+pilote) sur surface de l'aile,6
+160,envergure au carré sur surface de l'aile,-6
+160,poids du pilote sur surface de l'aile,-6
+160,surface de l'aile sur poids total (aile + pilote),-6
+161,font l'objet de la norme CEN avant d'être mis sur le marché,2
+161,leur performance se juge par taux de chute,2
+161,leur dispositif d'extraction et d'ouverture est automatique,-6
+161,leur performance se juge par leur stabilité,2
+162,"Non, les aéronefs ultralégers non motorisés ne peuvent utiliser un aérodrome contrôlé sans autorisation particulière de l'autorité compétente",6
+162,"Oui, mais il faut que je respecte le circuit de l'aérodrome",-6
+162,"Oui, il me suffit d'annoncer mon arrivée par radio",-6
+163,a un axe plus ou moins penché par le vent,3
+163,est une caractéristique de l'aile qui ne dépend pas du vent,-6
+163,correspond à l'ensemble des points les plus éloignés que l'aile peut atteindre en vol plané,3
+164,l'incidence est trop forte,6
+164,la vitesse est trop forte,-6
+164,l'incidence est trop faible,-6
+165,peut être positionné sous la planche d'assise de la sellette,2
+165,peut être positionné en position ventrale,2
+165,ne peut pas être connecté aux abords de la connexion du parapente sur la sellette,-6
+165,peut être positionné au dos de la sellette,2
+166,est le point où la pression statique de l'air est maximale,2
+166,sépare les écoulements d'intrados et d'extrados,2
+166,est la zone où dépression et surpression s'arrêtent,-6
+166,se déplace en fonction de l'incidence,2
+167,aggravation lente avec pluie modérée,-6
+167,temps brumeux couvert avec bruine,-6
+167,"aggravation rapide avec pluie, orages, vents forts, turbulences",6
+168,le dernier virage peut se prévoir à 5 m/sol et sur 180°,-6
+168,il faut ralentir sa vitesse très tôt,-6
+168,il est déconseillé de faire des virages serrés près du sol à cause de l'augmentation du taux de chute,3
+168,il faut augmenter la vitesse en finale bien avant le freinage,3
+169,La capacité à réparer son équipement,-3
+169,Les compétences en pilotage,3
+169,Les connaissances théoriques,3
+169,La capacité à naviguer sans GPS,-3
+170,lorsque le sol se refroidit par nuit claire,-6
+170,lors de l'arrivée d'une masse d'air chaude sur un sol froid,6
+170,sans vent,-6
+171,au carré de la corde divisé par la surface,-6
+171,au carré de la surface divisé par l'envergure,-6
+171,au carré de l'envergure divisé par la surface,6
+172,vous améliorez l'amortissement en tangage,3
+172,vous gardez votre « tour de frein »,-6
+172,la traînée augmente,3
+172,l'incidence diminue,-6
+173,vous contactez le revendeur pour un contrôle en usine,3
+173,vous tendez d'avantage le cuissard droit,-6
+173,une fois posé vous décalez le niveau des élévateurs droits sur le harnais,-6
+173,vous portez votre poids sur votre fesse gauche et vérifiez si une déviation de la trajectoire équivalente du côté opposé se produit,3
+174,facultative si les élèves sont accompagnés par un pilote breveté,-6
+174,facultative dans tous les cas,-6
+174,obligatoire sur la pente école pendant les cours,6
+175,d'effilement,-6
+175,d'instabilité,-3
+175,de performance,6
+176,être matérialisé par un cumulus bourgeonnant,2
+176,être matérialisé par un voile de stratus,-6
+176,ne donner lieu à aucune matérialisation,2
+176,être dévié par le vent,2
+177,"vous gonflez face au vent, temporisez, puis prenez de la vitesse en orientant progressivement votre course et votre aile dans l'axe de la plus grande pente",6
+177,"vous gonflez face à la ligne de pente la plus raide, temporisez, puis prenez de la vitesse en orientant progressivement votre course et votre aile face au vent",-6
+177,"vous gonflez dans l'axe de la plus grande pente, temporisez, puis accélérez en vous attendant à devoir freiner amplement juste avant de décoller",-6
+178,une atmosphère humide,-6
+178,une atmosphère instable,-6
+178,une atmosphère stable,6
+179,le risque est faible tant que le nuage n'est pas de type congestus ou nimbus,-6
+179,il n'y a jamais de risque d'aspiration,-6
+179,vous risquez d'être aspiré car l'ascendance peut se renforcer,3
+179,le danger est aggravé si la base est en dessous des plus hautes crêtes,3
+180,Une erreur de jugement en vol,2
+180,Un mauvais choix de site de décollage,2
+180,Des problèmes techniques de l'équipement,-6
+180,Une mauvaise estimation de la météo,2
+181,est inférieure à l'incidence du taux de chute mini,3
+181,diminue si je bride mon aile,-6
+181,augmente si j'utilise mon accélérateur,-6
+181,reste constante si mon vol est équilibré,3
+182,la vitesse sur trajectoire augmente,3
+182,la vitesse sur trajectoire diminue,-6
+182,la trajectoire s'incurve transitoirement vers le haut,-6
+182,la trajectoire s'incurve transitoirement vers le bas,3
+183,la direction du vent,-6
+183,la vitesse du vent relatif à bord,3
+183,la vitesse du vent instantané lorsque l'on est au sol,3
+184,supérieure,6
+184,inférieure,-6
+184,égale,-6
+185,moins fort,-6
+185,de même force,-6
+185,plus fort,6
+186,améliorent et facilitent le rôle de chacun pour la progression du nouveau pilote,3
+186,sont indispensables dans l'intérêt des pratiquants,3
+186,pourraient nuire à la bonne évolution de l'activité,-6
+186,sont à éviter absolument,-6
+187,de la direction de votre aile par rapport au nord,-6
+187,de la hauteur de votre aile,-6
+187,de la vitesse verticale de votre aile par rapport au sol,6
+188,concave suivie d'une cassure nette,-6
+188,convexe et progressive,3
+188,dégagée d'obstacles,3
+189,"Se mettre dans sa bulle (échauffement, musique, méditation, prévol, ...)",2
+189,La mentalisation du décollage et du plan de vol,2
+189,Se précipiter pour vite décoller et passer à autre chose,-6
+189,Une technique de respiration,2
+190,sont très faibles car l'atmosphère humide est à tendance stable,-6
+190,ne sont généralement pas matérialisées,-6
+190,sont souvent matérialisées par des nuages,6
+191,vous relevez les bras et prenez un maximum de vitesse pour éviter le décrochage,-6
+191,vous tirez immédiatement sur le frein correspondant au côté fermé pour en forcer la réouverture,-6
+191,si votre première action n'apporte pas le résultat escompté vous extrayez et lancez votre secours,3
+191,vous contrôlez votre départ en rotation tout en gardant une vitesse suffisante pour éviter un « sur contre »,3
+192,un vent froid qui descend la vallée du Rhône,-6
+192,un vent météo qui descend le long d'une pente,-6
+192,un air qui s'est refroidi au contact du sol et qui descend par gravité le long d'une pente,6
+193,Au dos de toutes les cartes IGN du SIA au 1/500 000,-6
+193,Au dos des cartes au 1/250 000 et dans le complément aux cartes édité par le SIA,3
+193,"Sur le site du SIA, rubrique eAIP",3
+193,Dans le guide VFR édité par le SIA,-6
+194,je ressens une bascule arrière,2
+194,mon aile est en train de perdre de la vitesse,2
+194,je réagis en relevant brièvement mes mains puis les rabaisse si une abattée s'enchaîne,2
+194,je réagis en bridant doucement mon aile,-6
+195,des déformations de l'aile,2
+195,du taux de chute,2
+195,de la vitesse horizontale,2
+196,Les conditions météorologiques,2
+196,La préparation mentale (Mentalisation),2
+196,Des problèmes familiaux,2
+196,Le niveau de carburant dans le véhicule,-6
+197,"l'aérer puis le replier une à deux fois par an, et a minima selon les préconisations du constructeur",2
+197,changer les élastiques qui conditionnent son suspentage à chaque repliage,2
+197,le stocker au sec et éviter tout contact avec l'humidité,2
+197,l'essayer en vol sur mon site préféré au moins deux fois par an,-6
+198,votre vitesse-sol est augmentée,6
+198,cela fragilise votre parapente qui peut se fermer plus facilement,-6
+198,l'effet du vent sur votre visage sera bien plus fort,-6
+198,vous avez moins de portance sur votre parapente,-6
+199,de l'aile par rapport au sol,6
+199,de la masse d'air par rapport au sol,-6
+199,de la masse d'air par rapport à l'aile,-6
+199,de l'aile par rapport au niveau de la mer,-6
+200,se développent horizontalement,-6
+200,caractérisent des couches plutôt stables,-6
+200,caractérisent des couches plutôt instables,3
+200,se développent verticalement,3
+201,doit être vérifié avant chaque décollage,2
+201,doit se libérer à la première traction de la poignée de parachute (effort compris entre 4 et 6 kg),2
+201,est généralement verrouillé par une aiguille souple ou rigide,2
+201,une large bande de velcro pour la stabiliser evitera les ouvertures intempestives,-6
+202,abandon du vol par épuisement,-6
+202,rupture de l'aile,2
+202,"incident de vol irréversible (twist, cravate, etc.)",2
+202,collision,2
+203,est due au pilote et aux câbles ou suspentes,-6
+203,se manifeste entre autres par des tourbillons marginaux (vortex),6
+203,est due aux irrégularités de surface de l'aile,-6
+204,portance sur traînée,-3
+204,vitesse verticale sur vitesse horizontale,-6
+204,vitesse de vol sur taux de chute,-3
+204,vitesse-sol horizontale sur vitesse-sol verticale,6
+205,est auto-délivrée par le pilote concerné,-6
+205,est reconnue par la FFVL et délivrée par le responsable régional formation (RRF),4
+205,est délivrée suite à plusieurs journées de formation spécifique,2
+205,est reconnue et délivrée par l'ensemble des pilotes du club,-3
+206,d'inversion des brises de vallée le soir,-6
+206,d'inversion des brises de pente le soir,-6
+206,"d'ascendances plutôt douces, le soir, sur des zones généralement peu propices pendant la journée",6
+207,L'humour,-6
+207,La panique,3
+207,L'indifférence,3
+207,Le calme absolu,-6
+208,l'air le plus chaud s'infiltre au-dessous de l'air froid,-6
+208,elles se mélangent facilement,-6
+208,l'air le plus chaud s'élève au-dessus de l'air froid,6
+209,vous vous préparez à relâcher les freins,0
+209,vous vous préparez à freiner,-6
+209,vous conservez votre régime de vol,0
+209,vous augmentez votre vitesse,6
+210,votre vitesse/air,-6
+210,la somme de vos 2 vitesses/air,6
+210,la moitié de votre vitesse/air,-6
+211,La visualisation du vol,6
+211,La sur-confiance,-6
+211,L'ignorance des risques,-6
+211,La méditation,0
+212,un vent très fort,-6
+212,pas de vent du tout,0
+212,un vent de force moyenne,3
+212,un réchauffement important au niveau du sol,3
+213,lire les panneaux d'informations FFVL sur ces sites,3
+213,obtenir l'autorisation de l'école locale,-6
+213,prendre connaissance de la classification des espaces aériens environnants et de la présence de zones à statut particulier,3
+213,obtenir l'autorisation du club local,-6
+214,permet de contrôler sa voile facilement pendant qu'elle monte,2
+214,permet de voir facilement les clefs dans les suspentes,2
+214,permet de décoller avec un vent supérieur à 30 km/h,-6
+214,permet de décoller avec des vents modérés à faibles,2
+215,vous tirez sur un frein pour ramener la voile,-6
+215,vous vous redressez et vous préparez à amortir le choc,2
+215,vous regardez vers le bas pour estimer le lieu de l'atterrissage,2
+215,vous faites symétriquement des tours de frein en dosant leur nombre pour stabiliser l'ensemble,2
+216,correspond à un angle d'incidence plus petit que celui de vitesse-max,-6
+216,est le régime de vol utile le plus proche du décrochage,3
+216,peut s'utiliser en permanence sans risque en ascendance,-6
+216,correspond à un angle d'incidence plus grand que celui de finesse-max,3
+217,à la rotation de la terre sur elle-même,-6
+217,au réchauffement solaire,-6
+217,au poids de la colonne d'air située au-dessus,6
+218,une augmentation de l'incidence,-6
+218,une diminution de la Force Aérodynamique,-6
+218,une augmentation de la vitesse-sol,3
+218,une augmentation de la finesse-sol,3
+219,du niveau technique du pilote,2
+219,de la charge alaire appliquée sur les modèles dont la fourchette de poids est très large,2
+219,des indications du constructeur,1
+219,des résultats aux tests,1
+220,donne des indications sur le comportement de ce modèle dans certaines configurations de vol,2
+220,permet de se faire une idée sur le niveau de pilotage demandé pour ce modèle,2
+220,indique pour quelle fourchette de poids l'aile a été testée,2
+220,n'est pas obligatoire sur tous les exemplaires d'un modèle homologué,-6
+221,augmente l'incidence,-6
+221,permet d'augmenter encore plus votre taux de chute,3
+221,peut être une parade au risque de parachutale,3
+221,rend l'aile plus stable en roulis,-6
+222,maîtrise les spécificités du treuil,3
+222,ne peut proposer de sorties montagnes,-6
+222,a les mêmes prérogatives que l'accompagnateur fédéral dans un club de montagne,3
+223,l'effet pendulaire préjuge de l'arrivée d'une abattée,2
+223,le facteur de charge est inférieur à,12
+223,l'assiette est à piquer,-6
+223,la vitesse-air parvient à un minimum,2
+224,vous autorise à un niveau d'engagement plus fort,-6
+224,permettent parfois et pour certains modèles d'atténuer les lésions dues au poinçonnement,2
+224,peuvent améliorer le maintien dorsal,2
+224,peuvent protéger contre un choc de faible intensité,2
+225,le soir,6
+225,au centre des vallées toute la journée,-6
+225,le matin au centre de la vallée,-6
+226,Le manque de sommeil,3
+226,La connaissance approfondie des règles de vol,-3
+226,L'entraînement régulier,-3
+226,La consommation d'alcool avant le vol,3
+227,je peux utiliser l'accélérateur pour descendre encore plus vite,2
+227,je me donne la possibilité d'étager mon approche lors d'une présentation simultanée de plusieurs ailes à l'atterrissage,2
+227,je surveille mon aile en permanence pour m'assurer que les « oreilles » restent en place,-6
+227,je suis sensible à l'éventuelle diminution du vent dans mes oreilles,2
+228,est tout à fait déconseillé,2
+228,vous expose à des risques importants de collision avec les autres ailes en approche,2
+228,permet d'être précis à l'atterrissage,-6
+228,vous fait perdre de vue les repères au sol,2
+229,le niveau du pilote (fiche de progression),3
+229,le site principalement fréquenté,0
+229,la catégorie de la voile,3
+229,son coût abaissé par l'absence de contrôle technique,-6
+230,conduction,2
+230,convection,2
+230,rayonnement,2
+231,les suspentes D,-6
+231,les suspentes A et B,3
+231,la partie arrière du profil,-6
+231,la partie avant du profil,3
+232,dépend du poids du pilote et des indications du constructeur,-6
+232,est inférieur à 1 au cours d'une abattée,2
+232,est égal à 1 en vol rectiligne stabilisé,2
+232,est supérieur à 1 pendant les virages équilibrés,2
+233,Écouter de la musique pendant le vol,-6
+233,Boire du café avant le vol,-3
+233,Les techniques de respiration,3
+233,La mentalisation,3
+234,900 m,-6
+234,1200 m,6
+234,1000 m,-6
+235,vous engagez immédiatement un virage prononcé pour vous éloigner de la pente,-6
+235,vous freinez immédiatement pour ralentir la vitesse de rapprochement du sol,-6
+235,"vous appliquez votre poids du côté dégagé en relevant les mains puis, dès que la vitesse est revenue, vous utilisez la commande pour virer",6
+236,vous fait perdre toute référence extérieure,2
+236,est toujours sans danger,-6
+236,vous expose à des facteurs de charges importants,2
+236,peut entraîner une perte de connaissance,2
+237,est possible si un réchauffement suffisant du sol est obtenu,3
+237,peut se concentrer le long des pentes bien exposées au soleil,3
+237,est impossible,-6
+238,"identique, quelle que soit la vitesse de l'aile",-6
+238,perpendiculaire à la trajectoire-air,3
+238,plus faible que le poids total aile + pilote,3
+239,la portance augmente,-6
+239,la traînée diminue,-6
+239,la portance chute,2
+239,la traînée augmente fortement,4
+240,soufflant vers le cap 225°,-3
+240,soufflant vers le sud-ouest,-3
+240,soufflant vers le nord-est,3
+240,provenant du cap 225°,3
+241,une mise en descente (l'autre reste au même niveau),-6
+241,un virage à gauche (l'autre dégage aussi à gauche),-6
+241,un virage à droite (l'autre dégage aussi à droite),6
+242,une meilleure pénétration,-6
+242,un taux de chute plus faible,3
+242,une vitesse de décrochage identique,-6
+242,une vitesse max plus faible,3
+243,la trajectoire s'incurve vers le haut,3
+243,la trajectoire s'incurve vers le bas,-6
+243,la vitesse sur trajectoire diminue,3
+243,la vitesse sur trajectoire augmente,-6
+244,de vents faibles,0
+244,de basse pression,-6
+244,de haute pression,6
+245,L'expérience de vol,3
+245,La température extérieure,-3
+245,Le stress,3
+245,La couleur de l'aile,-3
+246,vous augmentez fortement l'incidence de votre aile et maintenez cette action,-6
+246,"c'est une erreur de pilotage, j'aurais dû agir préalablement pour éviter la fermeture",2
+246,"vous tirez brièvement sur les deux freins puis, promptement relevez vos mains",2
+246,vous débridez intégralement votre aile,2
+247,la vitesse-air de l'aile,6
+247,la vitesse du vent météo,-6
+247,la vitesse-sol,-6
+248,une dépression apparaissant au-dessus du profil et une surpression au-dessous,3
+248,la déviation non symétrique des filets d'air par le profil de l'aile,3
+248,une dépression apparaissant au-dessous du profil et une surpression au-dessus,-6
+249,le nez de l'aile se met face au vent : c'est l'effet girouette,-6
+249,l'axe de l'aile reste parallèle à la trajectoire/sol,-6
+249,vous devez adopter un angle de contre-dérive si vous vous dirigez vers un point qui n'est pas dans l'axe du vent,4
+249,l'axe de l'aile fait un angle avec la trajectoire/sol,2
+250,dans le sens des aiguilles d'une montre dans l'hémisphère nord,6
+250,dans le sens contraire des aiguilles d'une montre dans l'hémisphère nord,-6
+250,dans le sens des aiguilles d'une montre dans l'hémisphère sud,-6
+251,vous resserrez votre virage quand l'ascendance diminue,3
+251,vous pouvez voler très lentement sans risque d'autorotation car l'air ascendant empêchera une abattée éventuelle,-6
+251,vous élargissez votre virage quand l'ascendance augmente,3
+251,vous élargissez votre virage quand l'ascendance diminue,-3
+252,Le déni des risques,6
+252,La prudence excessive,-6
+252,La curiosité scientifique,-6
+252,L'auto-critique,-6
+253,un pré gonflage ne s'impose pas,-6
+253,"je ne croise pas mes commandes, je les prends en main comme je l'aurais fait en étant dos à l'aile puis réunis les 2 A dans la main du côté de mon sens de rotation",3
+253,une traction solidement verrouillée des « C » ou des « D » permet une solution d'attente sûre,3
+253,j'ai soigneusement trié mes suspentes et disposé mon aile au sol avant d'endosser ma sellette,0
+254,il va y avoir du brouillard cette nuit,0
+254,la convection thermique va se renforcer car l'atmosphère se réchauffe,-6
+254,un cumulonimbus est en cours de formation,-6
+254,"un front chaud arrive, il va probablement pleuvoir",6
+255,votre vitesse-max sera plus faible,-6
+255,elle sera moins sensible à la fermeture dans les turbulences,3
+255,elle sera plus sensible à la fermeture dans les turbulences,-6
+255,les réactions de l'aile lors de fermetures seront plus vives,3
+256,résonnant,-6
+256,laminaire,2
+256,turbulent,2
+256,décollé,2
+257,délivre le brevet de pilote,-6
+257,atteste la partie pratique du brevet de pilote,3
+257,est responsable de toutes les activités pédagogiques de l'école,3
+258,identique,-6
+258,plus lourd,6
+258,plus léger,-6
+259,7,-6
+259,8,6
+259,6,-6
+259,9,-6
+260,peut être la cause d'amples mouvements de tangage et de roulis,2
+260,son contrôle doit être priorisé pour la sécurité du vol en parapente,2
+260,génère des mouvements de lacet,-6
+260,est produit par la différence de vitesse entre le pilote et sa voile,2
+261,c'est un moyen de descente rapide qui peut doubler votre taux de chute,6
+261,vous augmentez votre finesse/air,-6
+261,ça n'abîme pas l'aile,0
+261,"vent de face, votre finesse/sol augmente",-6
+262,Des copains qui volent avec vous,-6
+262,Votre état de fatigue physique et mentale du jour,2
+262,Des conditions du jour,2
+262,De votre niveau technique,2
+263,"Pas de minimum en aéronef ultraléger non motorisé, mais ne pas mettre en danger les biens et les personnes au sol",-6
+263,150 m minimum pour pouvoir dégager si besoin,-6
+263,"A minima, et sauf restrictions particulières, 300 m au-dessus de l'obstacle le plus élevé dans un rayon de 600 m autour de l'aéronef",6
+264,diminue par vent arrière,-6
+264,augmente par vent de face,-6
+264,augmente par vent arrière,6
+265,vérifier les performances et les comportements de l'aile sur un site grand vol connu et en conditions aérologiques calmes,3
+265,raccourcir les freins pour légèrement diminuer sa vitesse max (bras haut),-6
+265,"faire quelques essais en pente école pour vérifier les freins, le suspentage et le ressenti de la prise en charge pendant la course",3
+266,faites comme si vous étiez seul,-6
+266,engagez la spirale juste devant lui pour qu'il vous voit bien,-6
+266,essayez en jouant sur la vitesse de vous placer de façon diamétralement opposée dans le même sens de rotation,6
+267,"vous ne vous inquiétez pas, vous arrondirez plus tôt et n'envisagez pas de virage",-6
+267,en utilisant la sellette vous veillez à ce que cet écart ne s'aggrave pas et vous vous préparez à arrondir normalement,6
+267,vous réalisez un virage pour vous replacer face au vent et freinerez une fois face au vent,-6
+268,est supérieure à mon incidence de taux de chute mini,-6
+268,est inférieure à l'incidence de mon taux de chute mini,6
+269,une dépression,0
+269,un anticyclone,-6
+269,un marais barométrique,6
+270,est dû à une ascendance thermique,-6
+270,est fixe par rapport au sol,3
+270,indique une absence de vent,-6
+270,est dû à une ascendance dynamique,3
+271,vous courez vers l'aile avant d'être déséquilibré et aidez à affaler en tirant sur les freins,3
+271,vous courez vers l'aile avant d'être déséquilibré et décrochez l'aile à l'aide des élévateurs arrière si vous y arrivez,3
+271,vous résistez et simultanément tirez les deux freins à fond pour vous arrêter,-6
+271,vous lâchez les commandes et vous vous agrippez où vous pouvez pour résister,-6
+272,les cirrus sont constitués de cristaux de glace,3
+272,les cumulonimbus sont constitués de gouttes d'eau et de cristaux de glace,3
+272,les nimbostratus donnent des chutes de grêlons,-6
+272,les stratus sont constitués de cristaux de glace,-6
+273,La capacité de prise de décision,2
+273,La sur-confiance en soi,-6
+273,La connaissance de soi,2
+273,L'humilité,2
+274,vous freinez symétriquement des deux côtés,0
+274,vous freinez à gauche amplement pour regonfler le côté fermé,-6
+274,vous contrez à droite pour vous dégager du relief tout en évitant le « surcontre »,6
+274,vous laissez faire si votre parapente est classé A de la norme CEN,-6
+275,diminue l'incidence,-6
+275,augmente la vitesse/air,-6
+275,augmente l'incidence,3
+275,diminue la vitesse/air,3
+276,"Il suffit de voler à moins de 500 ft (150 m) sol, les autres aéronefs volant au-dessus de cette limite",-6
+276,En téléphonant à la DGAC,-6
+276,En me référant aux mentions concernant la nature et le volume de cet espace sur un document aéronautique à jour,6
+277,sous le vent d'un relief dans une couche d'air stable,6
+277,au vent d'un relief dans une couche d'air stable,-6
+277,n'importe où dans une couche d'air instable,-6
+278,"un pilote expérimenté peut, sur un site adapté, décoller en gonflant dos au vent",-6
+278,vous essayez de gonfler car ça partira tout seul sans avoir besoin de courir,-6
+278,c'est trop ; vous vous abstenez,6
+279,vous allez vous excuser auprès du cultivateur,3
+279,vous estimez les dégâts et vous le dédommagez immédiatement,0
+279,vous êtes dans votre tort et vous devez régler le prix sur place,-6
+279,vous demandez au cultivateur d'estimer les dégâts et vous faites une déclaration à l'assureur de la FFVL,3
+280,cumulus congestus et cumulonimbus,-6
+280,cirrostratus et nimbostratus,-6
+280,altocumulus lenticulaires et cumulus rotors,6
+281,d'être habitué aux effets de dérive imposés par le vent,2
+281,une observation constante de l'évolution du vent,2
+281,une maîtrise parfaite de sa trajectoire,2
+282,il s'élève à la même vitesse que la bulle,-6
+282,il descend continuellement à l'intérieur de la bulle,6
+282,il aborde la bulle vers sa partie inférieure et ressort au sommet,-6
+283,Il peut conduire à des décisions hâtives,6
+283,Il n'a aucun effet,-6
+283,Il améliore la concentration,-6
+283,Il augmente la confiance en soi,-6
+284,lorsque le sol se refroidit par une nuit claire,4
+284,sans vent ou par vent très faible,2
+284,lors de l'arrivée d'une masse d'air chaude sur un sol froid,-6
+285,"Oui, à n'importe quel moment, en fonction du mode de vol appliqué",6
+285,"Oui, mais seulement si un exercice militaire a été programmé",-6
+285,"Non, uniquement dans les zones militaires de type, R, RTBA, P, ZIT, CTR et TMA",-6
+286,les hautes pressions dans votre dos,-6
+286,les basses pressions à droite,6
+286,les hautes pressions à droite,-6
+287,les zones urbanisées,2
+287,les zones rocailleuses,2
+287,les forêts,-6
+287,les zones sèches,2
+288,que je maîtrise bien aux performances honnêtes,6
+288,"aux performances maximales, mais difficile à piloter pour mon niveau",-6
+288,"qui gagne en compétition, quel que soit mon niveau",-6
+289,n'est obligatoire qu'à la fondation du club,-6
+289,est obligatoire tous les 2 ans,-6
+289,est obligatoire tous les ans,6
+290,moins fort que la vitesse/air de l'aile,6
+290,plus fort que la vitesse/air de l'aile,-6
+290,on ne peut pas savoir,-6
+291,une aile d'occasion pas trop chère,0
+291,une aile adaptée à mon niveau de pratique actuel,6
+291,une aile qui me donnera satisfaction quand j'aurai progressé,-3
+291,une aile plus performante que la précédente et d'une catégorie d'homologation supérieure,-3
+292,peut attester le brevet de pilote confirmé,-6
+292,peut attester la partie pratique du brevet de pilote,-6
+292,peut enseigner si les moniteurs possèdent les diplômes requis,6
+293,est invisible,4
+293,est visible (fines gouttelettes d'eau),-6
+293,existe uniquement dans l'air maritime,-6
+293,existe partout dans la troposphère,2
+294,diminuer sa température,6
+294,abaisser son altitude,-6
+294,augmenter sa température,-6
+295,n'a pas d'effet sur la vitesse/air,-6
+295,est parfois dangereux car il peut conduire au décrochage en cas de pilotage inadapté,2
+295,nécessite par sécurité une prise de vitesse préalable,2
+295,augmente le taux de chute,2
+296,se prépare suffisamment tôt,2
+296,tient compte du vent météo et de ses variations possibles,2
+296,doit être modifiable en cas de nécessité,2
+297,une zone où la pression atmosphérique varie peu,-6
+297,un axe de hautes pressions,-6
+297,un axe de basses pressions,6
+298,du côté de l'aile qui se soulève,-6
+298,du côté du relief,-6
+298,du côté opposé au relief,6
+299,dans une ascendance dynamique,-6
+299,dans les zones de cisaillement,2
+299,"près du relief, lorsque l'activité thermique est maximale",2
+299,sous le vent d'un relief par vent fort,2
+300,"de pilotes licenciés, au minimum fin de niveau vert ayant validés le brevet initial",6
+300,de pilotes brevetés assurés,0
+300,de pilotes de bon niveau non licenciés,-6
+300,d'accompagnateurs de club entre eux uniquement,-6
+301,quand il y a intervention des secours ou hospitalisation,3
+301,l'aéronef est endommagé,-6
+301,une tierce personne est blessée,3
+302,je résiste au déséquilibre en transférant mon poids à gauche,2
+302,j'actionne immédiatement ma main droite avec un geste ample et profond pour forcer la réouverture de l'aile,-6
+302,je regarde mon aile pour évaluer la situation et son évolution,2
+302,j'utilise mon frein gauche de manière à ralentir un départ en rotation,2
+303,une association loi 1901 (sans but lucratif) affiliée à la FFVL,3
+303,contrôlé par les adhérents de l'association,3
+303,une entreprise privée indépendante de la FFVL,-6
+304,s'il le faut vous mettre en ligne droite face au terrain,3
+304,accélérer pour ne pas perdre de temps,-6
+304,raccourcir vos S,3
+305,ils se forment à leur partie au vent et se désagrègent à leur partie sous le vent,6
+305,leur durée de vie est très brève,-6
+305,à leur niveau le vent est nul,-6
+306,augmentez la manœuvrabilité de l'aile,-6
+306,augmentez le taux de chute,3
+306,diminuez la finesse/air,3
+307,15 h,6
+307,12 h,-4
+307,14 h,-2
+308,vous vous abstenez de décoller en estimant que la marge de sécurité n'est pas suffisante,6
+308,vous devez courir à 5 km/h pour décoller,-6
+308,vous utilisez l'accélérateur dès que possible pour pouvoir vous éloigner du relief,-6
+309,stratus,-6
+309,rotors d'onde de ressaut,3
+309,à l'interface d'une couche d'inversion recouvrant une masse d'air générant des ascendances,3
+310,Sur un site connu,2
+310,Avec votre sellette habituelle,2
+310,Dans des conditions thermiques pour tout de suite voir ce qu'elle a dans le ventre,-6
+310,Le matin dans des conditions calmes,2
+311,s'affaiblit lorsque les isobares se resserrent,-6
+311,n'a rien à voir avec l'espacement des lignes isobares,-6
+311,se renforce lorsque les isobares se resserrent,6
+312,vous diminuez l'inclinaison,-6
+312,vous continuez le virage jusqu'à 270° puis reprenez une ligne droite pour retrouver l'ascendance,3
+312,vous inversez le sens du virage,3
+313,plutôt de vents forts,-6
+313,d'un mouvement général d'affaissement des masses d'air,4
+313,plutôt de vents faibles,2
+313,d'un mouvement général ascendant des masses d'air,-6
+314,une abattée dont l'amplitude peut exiger d'être contrôlée,2
+314,de vous obliger à lever vos mains pour favoriser la reprise de vitesse,2
+314,de vous obliger à abaisser vos mains pour garder le contact avec l'aile,-6
+314,l'affaiblissement du bruit du vent dans les oreilles,2
+315,"Sauf cas très particulier, les pratiquants de vol libre ne sont pas tenus de déposer un plan de vol",6
+315,Un plan de vol simplifié comprenant les horaires et lieux de vol prévus,-6
+315,Un plan de vol simplifié comprenant uniquement l'itinéraire prévu,-6
+316,défile 2 fois moins vite que par vent nul,-6
+316,paraît fixe,-6
+316,défile 2 fois plus vite que par vent nul,6
+317,la R.C. du propriétaire de la voiture qui doit rembourser,-6
+317,la RC du pilote qui remboursera,6
+317,le propriétaire de la voiture qui doit payer,-6
+317,au pilote de payer les dégâts,-6
+318,peut donner lieu à de fortes précipitations et turbulences,4
+318,peut provoquer des coups de vent,2
+318,est sécurisant (air froid = air stable),-6
+318,donne peu de vent,-6
+319,sur les rochers ensoleillés,6
+319,dans les fonds de vallée,-6
+319,sur les versants à l'abri du soleil et du vent,-6
+320,est fort près du sol et la masse d'air très instable,-6
+320,est de plus en plus fort en altitude et la masse d'air stable,6
+320,est faible en altitude et la masse d'air très instable,-6
+321,pour tenter d'écoper et monter votre aile symétriquement vous vous décalez légèrement sur la gauche,-6
+321,votre demi-aile droite se lève en premier,3
+321,votre demi-aile gauche se lève en premier,-6
+321,pour tenter d'écoper et monter votre aile symétriquement vous vous décalez légèrement sur la droite,3
+322,ne dépend que des caractéristiques aérodynamiques de l'aile,-6
+322,varie en fonction de la direction et de la vitesse du vent,3
+322,varie en fonction de l'incidence,3
+323,altostratus,3
+323,cumulonimbus,-6
+323,cumulus,-6
+323,cirrostratus,3
+324,vous quittez l'ascendance pour la reprendre d'un autre côté,-6
+324,"pour vous recentrer, vous élargissez le virage juste avant le maximum du variomètre et resserrez peu après",6
+324,vous inversez le sens des 360°,-6
+325,40 m c'est peu ; vous décollez,-6
+325,"vous attendez en espérant que la nuée se dégage, sinon vous ne décollez pas",6
+325,"s'il y a un vent suffisant pour faire du vol de pente, vous décollez et vous restez au-dessus de la couche",-6
+326,"je dois prendre connaissance du formulaire d'information sur les contre-indications médicales à la pratique du parapente, delta",6
+326,je dois présenter un certificat médical d'absence de contre-indication à la pratique du vol libre,-6
+327,ça améliore la finesse sans action sur les commandes,-6
+327,il faut rallonger et régler les freins pour le prochain vol,6
+327,c'est mieux pour le gonflage,-6
+327,cela n'a que peu d'influence sur l'aile,-6
+328,il doit organiser le stage au-dessus de l'eau,3
+328,sa formation initiale est suffisante,-6
+328,il a reçu une formation particulière,3
+329,vous devez céder la priorité,6
+329,vous avez la priorité,-6
+329,la priorité est fonction de la taille respective des aéronefs,-6
+330,"pas du tout, je suis en bonne forme physique et psychique",0
+330,"énormément avec la fatigue et/ou les problèmes (cœur, santé, travail, etc.)",4
+330,raisonnablement en introduisant une seule nouveauté à la fois,2
+330,en pensant que les erreurs n'arrivent pas qu'aux autres et en veillant à mes comportements,-6
+331,vous infléchissez énergiquement votre trajectoire vers la vallée malgré la demi-aile fermée,-6
+331,vous forcez sa réouverture avec un abaissement ample du frein côté fermé,-3
+331,vous contrez commande + sellette pour garder votre cap,6
+332,"Etant basée sur le barème d'une atmosphère standard, l'altitude réelle correspondante est variable",3
+332,Les valeurs d'altitude exprimées en FL permettent d'éviter les collisions en réglant l'instrumentation des aéronefs sur l'atmosphère standard,3
+332,Il faut ajouter l'altitude du décollage pour pouvoir utiliser une valeur en FL,-6
+333,par le moniteur pour un de ses élèves,3
+333,par le pilote breveté ou son entourage,3
+333,dans tous les cas par le président du club,-6
+333,par la gendarmerie,-6
+334,vous cherchez à vous maintenir au taux de chute minimum pour avoir plus de temps pour effectuer le trajet,-6
+334,"en prenant des points de repère au sol et en jouant sur votre vitesse, vous essayez de trouver le meilleur angle de plané",6
+334,vous volez aussi rapidement que possible pour avoir une vitesse de pénétration maximale,-6
+335,vous lâchez puis retirez les freins plusieurs fois pour secouer l'aile et casser la finesse,-6
+335,vous freinez progressivement votre aile jusqu'au point de parachutage,-6
+335,vous perdez de l'altitude en faisant des 360°,-6
+335,vous augmentez le trajet en faisant un petit S,6
+336,vous êtes long,6
+336,vous devez ralentir au maximum,-6
+336,vous êtes court,-6
+337,en présence de vent le risque d'un gradient est propre à soudainement réduire ma vitesse relative,3
+337,les forces aérodynamiques n'ont pas une incidence directe sur la vitesse de vol,-6
+337,"les forces aérodynamiques augmentant au carré de la vitesse, elles favoriseront un freinage efficace",3
+338,dans le cadre des écoles labellisées par la fédération,6
+338,dans le cadre de la pratique loisir,-6
+338,pour pratiquer en compétition,-6
+339,il est recommandé de procéder demi-aile par demi-aile et de valider à chaque étape la présence du vent relatif,2
+339,"si la réouverture ne s'est pas faite d'elle-même, j'applique des actions répétées et rapides de petites amplitudes jusqu'à l'obtention de la réouverture totale",-6
+339,"si la réouverture ne s'est pas faite d'elle-même, j'abaisse, côté fermé, amplement et paisiblement ma commande pour la relâcher aussitôt",2
+339,je libère les suspentes concernées et regarde le bon déroulement de leur réouverture,2
+340,de mettre le cap immédiatement sur le terrain pour rentrer coûte que coûte,-6
+340,de ralentir au maximum afin de retarder le moment d'un atterrissage qui s'annonce délicat,-6
+340,de changer à temps son plan de vol pour se donner les meilleurs chances de rentrer malgré tout au terrain,3
+340,de repérer immédiatement des terrains de secours afin de se préparer à l'éventualité d'un atterrissage « aux vaches »,3
+341,un aéronef non soumis à l'immatriculation,2
+341,un parachute,-6
+341,un aéronef ultraléger non motorisé,2
+341,un Planeur Ultra Léger (PUL),2
+342,vous enroulez en sens inverse pour pouvoir la surveiller,-6
+342,vous enroulez dans le même sens qu'elle,6
+342,vous attendez qu'elle passe au-dessus de vous pour rentrer car sinon la descendance périphérique risque de vous mettre à la même hauteur,0
+343,le dessus,-6
+343,le dessous,-6
+343,la droite,3
+343,la gauche,3
+344,vous avez la priorité et maintenez votre cap,-6
+344,vous la laissez passer en vous écartant vers la droite ou vous faites demi-tour par la droite,3
+344,vous tentez de passer en dessous,-6
+344,elle a la priorité,3
+345,le delta doit la priorité au parapente,-6
+345,delta et parapente doivent observer les mêmes règles de l'air,6
+345,le parapente doit la priorité au delta,-6
+346,"En allant vérifier sur le site web du SIA, à la rubrique SUP AIP et NOTAM",6
+346,Il suffit d'aller sur les pages espace aérien du site web de la FFVL,-6
+346,En vérifiant l'affichage sur les panneaux d'information du site choisi,-6
+347,elle fait demi-tour,3
+347,elle double par la gauche en veillant à la sécurité de l'aile doublée,3
+347,elle double par la droite entre le relief et l'autre aile,-6
+348,"Oui, et l'usage de boissons alcoolisées ou de stupéfiants est interdit",6
+348,"Oui, mais la tolérance est identique à la circulation routière",-6
+348,"Non, cela ne concerne que la réglementation routière",-6
+349,face-voile en vous attendant à devoir avancer vers l'aile pour contrôler sa vitesse d'ascension,3
+349,dos à l'aile en vous attendant à devoir fortement résister en reculant pour contrôler la vitesse d'ascension du profil,-6
+349,face-voile en prenant un élévateur A dans chaque main en vous attendant à devoir les tractionner pour contrecarrer la force du vent,-6
+349,face-voile en réunissant les deux élévateurs A dans la main du côté de votre sens de rotation et en utilisant l'autre main pour contrôler la trajectoire de l'ascension de l'aile,3
+350,Dans les zones R et dans les ZIT,-6
+350,L'anticollision n'est jamais assurée dans les zones d'entraînement militaires,-6
+350,"Dans le RTBA activé, car le pilote évolue souvent en mode automatique de suivi de terrain",6
+351,"ASFC et AGL = hauteur sol, AMSL = altitude par rapport au niveau de la mer",6
+351,Elles expriment les hauteurs et altitudes en mètres à respecter,-6
+351,Toutes ces valeurs sont variables en fonction de la pression atmosphérique,-6
+352,une visibilité de 8 km et rester hors des nuages,-6
+352,"une visibilité de 5 km sous le FL 100, 8 km au-dessus et un espacement par rapport aux nuages de 300 m verticalement et 1500 m horizontalement",6
+352,une visibilité de 1500 m et rester hors des nuages,-6
+353,sous 5 jours à la FFVL qui transmet à l'assureur,6
+353,sous 15 jours à l'assureur,-6
+353,sous 15 jours à la FFVL,-6
+354,"Oui, il est cependant tenu dans ce cas de continuer à évoluer sous le régime IFR",6
+354,"Oui, et le trafic IFR est donc prioritaire",-6
+354,"Non, le trafic IFR n'évolue qu'en espaces classés D à minima",-6
+355,au biplace sur le monoplace,-6
+355,"par convention, à l'aile arrivée la première dans l'ascendance",2
+355,à l'aile qui arrive par la droite,4
+355,à l'aile pilotée par un débutant,-6
+356,"les aéronefs ultralégers non motorisés sont prioritaires sur les ensembles remorqués (avion+planeur, U.L.M.+delta, avion ou U.L.M.+banderole)",6
+356,les biplaces sont prioritaires sur les monoplaces,-6
+356,les ballons doivent la priorité aux deltas et aux parapentes,-6
+357,à dépasser une aile plus lente par la gauche,-6
+357,à dégager par la droite en cas de croisement à la même altitude,3
+357,à respecter une distance suffisante pour prévenir les abordages,3
+358,"Oui, sous réserve de n'utiliser le moteur que temporairement",-6
+358,"Non, un delta ou un parapente équipé d'un moteur est soumis aux règles des ULM",6
+358,"Oui, sous réserve d'avoir une assurance complémentaire",-6
+359,Toujours en altitudes QNH pour prendre en compte les variations de pression,-6
+359,"Selon le cas, en ASFC, AMSL ou FL",6
+359,En niveaux de vol uniquement à cause du trafic IFR,-6
+360,le directeur technique d'une école française de vol libre (DTE),6
+360,le responsable régional de la formation (RRF),-3
+360,le président de votre club,-3
+361,8000 m,-6
+361,1500 m,6
+361,300 m,-6
+362,peut estimer que sa progression est terminée,-6
+362,peut voler sous sa propre responsabilité sans contrevenir aux règlements fédéraux,3
+362,est considéré par son moniteur et par la FFVL comme un pilote autonome sur sites,3

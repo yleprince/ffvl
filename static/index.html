@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QCM Parapente BPC</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<style>
+  body { -webkit-tap-highlight-color: transparent; }
+  .option-missed {
+    border-width: 3px !important;
+    border-style: dashed !important;
+  }
+</style>
+</head>
+<body class="min-h-screen bg-base-200">
+
+<div class="navbar bg-base-100 shadow-sm sticky top-0 z-10">
+  <div class="flex-1">
+    <span class="text-lg font-bold px-2">QCM Parapente BPC</span>
+  </div>
+  <div class="flex-none">
+    <label class="swap swap-rotate">
+      <input type="checkbox" id="theme-toggle" />
+      <svg class="swap-off h-6 w-6 fill-current" viewBox="0 0 24 24"><path d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Z"/></svg>
+      <svg class="swap-on h-6 w-6 fill-current" viewBox="0 0 24 24"><path d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z"/></svg>
+    </label>
+  </div>
+</div>
+
+<div id="loading" class="flex flex-col items-center justify-center gap-4 p-10">
+  <span class="loading loading-spinner loading-lg"></span>
+  <p>Chargement...</p>
+</div>
+
+<div id="app" class="hidden max-w-2xl mx-auto p-4 pb-24">
+
+  <div class="flex flex-wrap items-center gap-2 mb-3 text-sm">
+    <div class="badge badge-primary" id="due-badge">0 dues</div>
+    <div class="badge badge-outline" id="score-badge">Session : 0 / 0</div>
+    <div class="badge badge-ghost" id="mastered-badge">0 maîtrisées</div>
+  </div>
+
+  <p class="text-xs opacity-50 mb-3">
+    <span id="stat-successful">0</span> réussies ·
+    <span id="stat-practice">0</span> à pratiquer ·
+    <span id="stat-unseen">0</span> non vues
+  </p>
+
+  <div id="question-card" class="card bg-base-100 shadow-md">
+    <div class="card-body">
+      <h2 id="question-text" class="card-title text-base leading-snug"></h2>
+      <div id="options-list" class="flex flex-col gap-2 mt-3"></div>
+
+      <div id="feedback" class="hidden mt-4 alert">
+        <span id="feedback-text"></span>
+      </div>
+
+      <div class="card-actions mt-4 flex-col sm:flex-row">
+        <button id="reveal-btn" class="btn btn-primary w-full sm:w-auto" disabled>Révéler la réponse</button>
+        <button id="next-btn" class="btn btn-outline w-full sm:w-auto hidden">Question suivante</button>
+      </div>
+
+      <p id="legend" class="hidden text-xs opacity-50 mt-2">
+        Vert = bonne réponse cochée · Rouge = mauvaise réponse cochée · Contour orange épais = réponse manquée
+      </p>
+    </div>
+  </div>
+
+  <div id="empty-card" class="hidden card bg-base-100 shadow-md">
+    <div class="card-body items-center text-center">
+      <h2 class="card-title">Tout est à jour !</h2>
+      <p id="empty-text" class="text-sm opacity-70"></p>
+      <button id="refresh-btn" class="btn btn-ghost btn-sm mt-2">Rafraîchir</button>
+    </div>
+  </div>
+
+</div>
+
+<script>
+let currentQuestionId = null;
+let sessionCorrect = 0;
+let sessionAnswered = 0;
+
+const loadingEl = document.getElementById('loading');
+const appEl = document.getElementById('app');
+const questionCardEl = document.getElementById('question-card');
+const emptyCardEl = document.getElementById('empty-card');
+const emptyTextEl = document.getElementById('empty-text');
+const questionTextEl = document.getElementById('question-text');
+const optionsListEl = document.getElementById('options-list');
+const revealBtn = document.getElementById('reveal-btn');
+const nextBtn = document.getElementById('next-btn');
+const refreshBtn = document.getElementById('refresh-btn');
+const dueBadge = document.getElementById('due-badge');
+const scoreBadge = document.getElementById('score-badge');
+const masteredBadge = document.getElementById('mastered-badge');
+const feedbackEl = document.getElementById('feedback');
+const feedbackTextEl = document.getElementById('feedback-text');
+const legendEl = document.getElementById('legend');
+const statSuccessful = document.getElementById('stat-successful');
+const statPractice = document.getElementById('stat-practice');
+const statUnseen = document.getElementById('stat-unseen');
+
+function updateStatsBadges(stats) {
+  dueBadge.textContent = `${stats.due} due${stats.due > 1 ? 's' : ''}`;
+  masteredBadge.textContent = `${stats.mastered} / ${stats.total} maîtrisées`;
+  scoreBadge.textContent = `Session : ${sessionCorrect} / ${sessionAnswered}`;
+  statSuccessful.textContent = stats.successful;
+  statPractice.textContent = stats.needs_practice;
+  statUnseen.textContent = stats.not_seen;
+}
+
+async function loadNext() {
+  const res = await fetch('/api/next');
+  const data = await res.json();
+  updateStatsBadges(data.stats);
+
+  if (data.question_id === null) {
+    questionCardEl.classList.add('hidden');
+    emptyCardEl.classList.remove('hidden');
+    if (data.next_due_at) {
+      const when = new Date(data.next_due_at + 'Z');
+      emptyTextEl.textContent = `Prochaine question due vers ${when.toLocaleString()}.`;
+    } else {
+      emptyTextEl.textContent = 'Aucune question dans la banque.';
+    }
+    return;
+  }
+
+  emptyCardEl.classList.add('hidden');
+  questionCardEl.classList.remove('hidden');
+  renderQuestion(data);
+}
+
+function renderQuestion(data) {
+  currentQuestionId = data.question_id;
+  questionTextEl.textContent = data.text;
+  feedbackEl.classList.add('hidden');
+  legendEl.classList.add('hidden');
+  revealBtn.classList.remove('hidden');
+  revealBtn.disabled = true;
+  nextBtn.classList.add('hidden');
+
+  optionsListEl.innerHTML = '';
+  data.options.forEach((opt) => {
+    const label = document.createElement('label');
+    label.className = 'flex items-center gap-3 p-3 rounded-lg border border-base-300 bg-base-100 cursor-pointer active:scale-[0.99] transition-transform';
+    label.dataset.optionId = opt.id;
+
+    const checkbox = document.createElement('input');
+    checkbox.type = 'checkbox';
+    checkbox.className = 'checkbox checkbox-primary';
+    checkbox.addEventListener('change', () => {
+      revealBtn.disabled = optionsListEl.querySelectorAll('input:checked').length === 0;
+    });
+
+    const span = document.createElement('span');
+    span.className = 'flex-1 text-sm';
+    span.textContent = opt.text;
+
+    label.appendChild(checkbox);
+    label.appendChild(span);
+    optionsListEl.appendChild(label);
+  });
+}
+
+async function revealAnswer() {
+  const labels = Array.from(optionsListEl.querySelectorAll('label'));
+  const selectedIds = labels
+    .filter((l) => l.querySelector('input').checked)
+    .map((l) => parseInt(l.dataset.optionId, 10));
+
+  const res = await fetch('/api/answer', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ question_id: currentQuestionId, selected_option_ids: selectedIds }),
+  });
+  const result = await res.json();
+
+  const correctById = new Map(result.options.map((o) => [o.id, o.correct]));
+  labels.forEach((label) => {
+    const optionId = parseInt(label.dataset.optionId, 10);
+    const checkbox = label.querySelector('input');
+    const isChecked = checkbox.checked;
+    const isCorrectOpt = correctById.get(optionId);
+    checkbox.disabled = true;
+
+    if (isCorrectOpt && isChecked) {
+      label.classList.add('bg-success/20', 'border-success');
+    } else if (!isCorrectOpt && isChecked) {
+      label.classList.add('bg-error/20', 'border-error');
+    } else if (isCorrectOpt && !isChecked) {
+      label.classList.add('border-warning', 'option-missed');
+    }
+  });
+
+  sessionAnswered++;
+  if (result.correct) sessionCorrect++;
+
+  feedbackEl.classList.remove('hidden');
+  feedbackEl.classList.toggle('alert-success', result.correct);
+  feedbackEl.classList.toggle('alert-error', !result.correct);
+  feedbackTextEl.textContent = result.correct ? 'Correct !' : 'Incorrect.';
+  legendEl.classList.remove('hidden');
+
+  revealBtn.classList.add('hidden');
+  nextBtn.classList.remove('hidden');
+
+  const statsRes = await fetch('/api/stats');
+  updateStatsBadges(await statsRes.json());
+}
+
+revealBtn.addEventListener('click', revealAnswer);
+nextBtn.addEventListener('click', () => {
+  loadNext();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+refreshBtn.addEventListener('click', loadNext);
+
+const themeToggle = document.getElementById('theme-toggle');
+function applyTheme(dark) {
+  document.documentElement.setAttribute('data-theme', dark ? 'night' : 'nord');
+  themeToggle.checked = dark;
+}
+const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+applyTheme(prefersDark);
+themeToggle.addEventListener('change', () => applyTheme(themeToggle.checked));
+
+(async function init() {
+  await loadNext();
+  loadingEl.classList.add('hidden');
+  appEl.classList.remove('hidden');
+})();
+</script>
+
+</body>
+</html>
