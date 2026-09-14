@@ -1,7 +1,0 @@
-data/
-__pycache__/
-*.pyc
-.git/
-.gitignore
-bp_corrected.md
-parse_qcm.py

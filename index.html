@@ -46,7 +46,8 @@
   <p class="text-xs opacity-50 mb-3">
     <span id="stat-successful">0</span> réussies ·
     <span id="stat-practice">0</span> à pratiquer ·
-    <span id="stat-unseen">0</span> non vues
+    <span id="stat-unseen">0</span> non vues ·
+    <button id="reset-progress-btn" class="underline">réinitialiser ma progression</button>
   </p>
 
   <div id="question-card" class="card bg-base-100 shadow-md">
@@ -80,7 +81,20 @@
 </div>
 
 <script>
-let currentQuestionId = null;
+const STORAGE_KEY = 'qcm-parapente-leitner-v1';
+const MAX_BOX = 6;
+const BOX_INTERVAL_MS = {
+  1: 60 * 1000,
+  2: 60 * 60 * 1000,
+  3: 24 * 60 * 60 * 1000,
+  4: 3 * 24 * 60 * 60 * 1000,
+  5: 7 * 24 * 60 * 60 * 1000,
+  6: 16 * 24 * 60 * 60 * 1000,
+};
+
+let allQuestions = [];     // [{id, text, options: [{text, score}]}]
+let leitnerState = {};     // {questionId: {box, nextDue, timesSeen, timesCorrect, lastReviewed}}
+let currentQuestion = null; // {id, text, options: [{text, score}]} (options shuffled for this round)
 let sessionCorrect = 0;
 let sessionAnswered = 0;
 
@@ -94,6 +108,7 @@ const optionsListEl = document.getElementById('options-list');
 const revealBtn = document.getElementById('reveal-btn');
 const nextBtn = document.getElementById('next-btn');
 const refreshBtn = document.getElementById('refresh-btn');
+const resetProgressBtn = document.getElementById('reset-progress-btn');
 const dueBadge = document.getElementById('due-badge');
 const scoreBadge = document.getElementById('score-badge');
 const masteredBadge = document.getElementById('mastered-badge');
@@ -104,40 +119,132 @@ const statSuccessful = document.getElementById('stat-successful');
 const statPractice = document.getElementById('stat-practice');
 const statUnseen = document.getElementById('stat-unseen');
 
-function updateStatsBadges(stats) {
+async function parseCSV(url) {
+  const text = await (await fetch(url)).text();
+  const rows = [];
+  let row = [], field = '', inQuotes = false;
+  for (let i = 0; i < text.length; i++) {
+    const c = text[i];
+    if (inQuotes) {
+      if (c === '"') {
+        if (text[i + 1] === '"') { field += '"'; i++; }
+        else { inQuotes = false; }
+      } else {
+        field += c;
+      }
+    } else {
+      if (c === '"') { inQuotes = true; }
+      else if (c === ',') { row.push(field); field = ''; }
+      else if (c === '\r') { /* skip */ }
+      else if (c === '\n') { row.push(field); rows.push(row); row = []; field = ''; }
+      else { field += c; }
+    }
+  }
+  if (field.length > 0 || row.length > 0) { row.push(field); rows.push(row); }
+  const header = rows.shift();
+  return rows.filter(r => r.length === header.length && r.some(v => v !== '')).map(r => {
+    const obj = {};
+    header.forEach((h, idx) => obj[h] = r[idx]);
+    return obj;
+  });
+}
+
+function shuffle(arr) {
+  const a = arr.slice();
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+function loadStoredState() {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    return raw ? JSON.parse(raw) : {};
+  } catch {
+    return {};
+  }
+}
+
+function saveState() {
+  try {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(leitnerState));
+  } catch {
+    // localStorage unavailable (private mode, quota, etc.) — progress just won't persist.
+  }
+}
+
+function ensureStateForQuestions() {
+  const now = Date.now();
+  for (const q of allQuestions) {
+    if (!leitnerState[q.id]) {
+      leitnerState[q.id] = { box: 1, nextDue: now, timesSeen: 0, timesCorrect: 0, lastReviewed: null };
+    }
+  }
+  saveState();
+}
+
+function computeStats() {
+  const now = Date.now();
+  let due = 0, mastered = 0, notSeen = 0, successful = 0, needsPractice = 0;
+  for (const q of allQuestions) {
+    const s = leitnerState[q.id];
+    if (s.nextDue <= now) due++;
+    if (s.box === MAX_BOX) mastered++;
+    if (s.timesSeen === 0) notSeen++;
+    else if (s.timesCorrect === 0) needsPractice++;
+    if (s.timesCorrect > 0) successful++;
+  }
+  return { total: allQuestions.length, due, mastered, notSeen, successful, needsPractice };
+}
+
+function updateStatsBadges() {
+  const stats = computeStats();
   dueBadge.textContent = `${stats.due} due${stats.due > 1 ? 's' : ''}`;
   masteredBadge.textContent = `${stats.mastered} / ${stats.total} maîtrisées`;
   scoreBadge.textContent = `Session : ${sessionCorrect} / ${sessionAnswered}`;
   statSuccessful.textContent = stats.successful;
-  statPractice.textContent = stats.needs_practice;
-  statUnseen.textContent = stats.not_seen;
+  statPractice.textContent = stats.needsPractice;
+  statUnseen.textContent = stats.notSeen;
 }
 
-async function loadNext() {
-  const res = await fetch('/api/next');
-  const data = await res.json();
-  updateStatsBadges(data.stats);
+function pickNextQuestion() {
+  const now = Date.now();
+  const due = allQuestions.filter((q) => leitnerState[q.id].nextDue <= now);
+  if (due.length === 0) {
+    let earliest = null;
+    for (const q of allQuestions) {
+      const nd = leitnerState[q.id].nextDue;
+      if (earliest === null || nd < earliest) earliest = nd;
+    }
+    return { question: null, nextDueAt: earliest };
+  }
+  const q = due[Math.floor(Math.random() * due.length)];
+  return { question: { id: q.id, text: q.text, options: shuffle(q.options) } };
+}
 
-  if (data.question_id === null) {
+function loadNext() {
+  updateStatsBadges();
+  const { question, nextDueAt } = pickNextQuestion();
+
+  if (!question) {
     questionCardEl.classList.add('hidden');
     emptyCardEl.classList.remove('hidden');
-    if (data.next_due_at) {
-      const when = new Date(data.next_due_at + 'Z');
-      emptyTextEl.textContent = `Prochaine question due vers ${when.toLocaleString()}.`;
-    } else {
-      emptyTextEl.textContent = 'Aucune question dans la banque.';
-    }
+    emptyTextEl.textContent = nextDueAt
+      ? `Prochaine question due vers ${new Date(nextDueAt).toLocaleString()}.`
+      : 'Aucune question dans la banque.';
     return;
   }
 
   emptyCardEl.classList.add('hidden');
   questionCardEl.classList.remove('hidden');
-  renderQuestion(data);
+  currentQuestion = question;
+  renderQuestion(question);
 }
 
-function renderQuestion(data) {
-  currentQuestionId = data.question_id;
-  questionTextEl.textContent = data.text;
+function renderQuestion(question) {
+  questionTextEl.textContent = question.text;
   feedbackEl.classList.add('hidden');
   legendEl.classList.add('hidden');
   revealBtn.classList.remove('hidden');
@@ -145,10 +252,10 @@ function renderQuestion(data) {
   nextBtn.classList.add('hidden');
 
   optionsListEl.innerHTML = '';
-  data.options.forEach((opt) => {
+  question.options.forEach((opt, idx) => {
     const label = document.createElement('label');
     label.className = 'flex items-center gap-3 p-3 rounded-lg border border-base-300 bg-base-100 cursor-pointer active:scale-[0.99] transition-transform';
-    label.dataset.optionId = opt.id;
+    label.dataset.optionIdx = idx;
 
     const checkbox = document.createElement('input');
     checkbox.type = 'checkbox';
@@ -167,50 +274,52 @@ function renderQuestion(data) {
   });
 }
 
-async function revealAnswer() {
+function updateLeitnerState(questionId, allCorrect) {
+  const state = leitnerState[questionId];
+  state.box = allCorrect ? Math.min(state.box + 1, MAX_BOX) : 1;
+  state.nextDue = Date.now() + BOX_INTERVAL_MS[state.box];
+  state.timesSeen += 1;
+  if (allCorrect) state.timesCorrect += 1;
+  state.lastReviewed = Date.now();
+  saveState();
+}
+
+function revealAnswer() {
   const labels = Array.from(optionsListEl.querySelectorAll('label'));
-  const selectedIds = labels
-    .filter((l) => l.querySelector('input').checked)
-    .map((l) => parseInt(l.dataset.optionId, 10));
+  let allCorrect = true;
 
-  const res = await fetch('/api/answer', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ question_id: currentQuestionId, selected_option_ids: selectedIds }),
-  });
-  const result = await res.json();
-
-  const correctById = new Map(result.options.map((o) => [o.id, o.correct]));
   labels.forEach((label) => {
-    const optionId = parseInt(label.dataset.optionId, 10);
+    const idx = parseInt(label.dataset.optionIdx, 10);
+    const opt = currentQuestion.options[idx];
     const checkbox = label.querySelector('input');
     const isChecked = checkbox.checked;
-    const isCorrectOpt = correctById.get(optionId);
+    const isCorrectOpt = opt.score > 0;
     checkbox.disabled = true;
 
     if (isCorrectOpt && isChecked) {
       label.classList.add('bg-success/20', 'border-success');
     } else if (!isCorrectOpt && isChecked) {
       label.classList.add('bg-error/20', 'border-error');
+      allCorrect = false;
     } else if (isCorrectOpt && !isChecked) {
       label.classList.add('border-warning', 'option-missed');
+      allCorrect = false;
     }
   });
 
+  updateLeitnerState(currentQuestion.id, allCorrect);
   sessionAnswered++;
-  if (result.correct) sessionCorrect++;
+  if (allCorrect) sessionCorrect++;
 
   feedbackEl.classList.remove('hidden');
-  feedbackEl.classList.toggle('alert-success', result.correct);
-  feedbackEl.classList.toggle('alert-error', !result.correct);
-  feedbackTextEl.textContent = result.correct ? 'Correct !' : 'Incorrect.';
+  feedbackEl.classList.toggle('alert-success', allCorrect);
+  feedbackEl.classList.toggle('alert-error', !allCorrect);
+  feedbackTextEl.textContent = allCorrect ? 'Correct !' : 'Incorrect.';
   legendEl.classList.remove('hidden');
 
   revealBtn.classList.add('hidden');
   nextBtn.classList.remove('hidden');
-
-  const statsRes = await fetch('/api/stats');
-  updateStatsBadges(await statsRes.json());
+  updateStatsBadges();
 }
 
 revealBtn.addEventListener('click', revealAnswer);
@@ -219,6 +328,12 @@ nextBtn.addEventListener('click', () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 refreshBtn.addEventListener('click', loadNext);
+resetProgressBtn.addEventListener('click', () => {
+  if (!confirm('Réinitialiser toute votre progression sur cet appareil ?')) return;
+  leitnerState = {};
+  ensureStateForQuestions();
+  loadNext();
+});
 
 const themeToggle = document.getElementById('theme-toggle');
 function applyTheme(dark) {
@@ -229,11 +344,31 @@ const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 applyTheme(prefersDark);
 themeToggle.addEventListener('change', () => applyTheme(themeToggle.checked));
 
-(async function init() {
-  await loadNext();
+async function init() {
+  const [questionRows, optionRows] = await Promise.all([
+    parseCSV('questions.csv'),
+    parseCSV('options.csv'),
+  ]);
+
+  const optionsByQuestion = {};
+  for (const o of optionRows) {
+    if (!optionsByQuestion[o.questionId]) optionsByQuestion[o.questionId] = [];
+    optionsByQuestion[o.questionId].push({ text: o.text, score: parseInt(o.score, 10) });
+  }
+
+  allQuestions = questionRows
+    .map((q) => ({ id: q.questionId, text: q.Text, options: optionsByQuestion[q.questionId] || [] }))
+    .filter((q) => q.options.length > 0);
+
+  leitnerState = loadStoredState();
+  ensureStateForQuestions();
+
   loadingEl.classList.add('hidden');
   appEl.classList.remove('hidden');
-})();
+  loadNext();
+}
+
+init();
 </script>
 
 </body>
